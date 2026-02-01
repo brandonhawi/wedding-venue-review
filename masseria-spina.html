@@ -1253,6 +1253,148 @@
                 </div>
             </div>
         </div>
+
+        <!-- Guest Accommodations with Map -->
+        <div style="margin-top: 5rem;">
+            <div class="section-header">
+                <p class="subtitle">Where to Stay</p>
+                <h2>Guest Accommodations</h2>
+            </div>
+
+            <div style="max-width: 1200px; margin: 0 auto 3rem; background: var(--cream); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <p style="font-size: 1.05rem; line-height: 1.8; color: #555; margin-bottom: 1rem;">
+                    Masseria Spina has 22-32 beds on-site, so guests may need additional lodging nearby.
+                    All options below are within 10-15 minutes of the venue in Monopoli and surrounding coastal towns.
+                </p>
+            </div>
+
+            <!-- Interactive Map -->
+            <div style="max-width: 1200px; margin: 0 auto 3rem;">
+                <div style="background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                    <div style="padding: 1.5rem; background: var(--cream); border-bottom: 1px solid var(--stone);">
+                        <h3 style="font-size: 1.3rem; color: var(--charcoal); margin-bottom: 0.25rem;">Accommodation Map</h3>
+                        <p style="font-size: 0.9rem; color: #666;">All lodging options near Masseria Spina</p>
+                    </div>
+                    <div id="accommodationMap" style="width: 100%; height: 500px; position: relative;"></div>
+                    <div style="padding: 1.5rem; background: var(--cream); border-top: 1px solid var(--stone);">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 800px; margin: 0 auto;">
+                            <div style="text-align: center;">
+                                <span style="display: inline-block; width: 12px; height: 12px; background: #c4724e; border-radius: 50%; margin-right: 0.5rem;"></span>
+                                <span style="font-size: 0.85rem; color: #666;"><strong>Masseria Spina</strong> (Venue)</span>
+                            </div>
+                            <div style="text-align: center;">
+                                <span style="display: inline-block; width: 12px; height: 12px; background: #b8956e; border-radius: 50%; margin-right: 0.5rem;"></span>
+                                <span style="font-size: 0.85rem; color: #666;"><strong>Luxury</strong> Hotels</span>
+                            </div>
+                            <div style="text-align: center;">
+                                <span style="display: inline-block; width: 12px; height: 12px; background: #8fa578; border-radius: 50%; margin-right: 0.5rem;"></span>
+                                <span style="font-size: 0.85rem; color: #666;"><strong>Mid-Range</strong> Hotels</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Luxury Options -->
+            <div style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.8rem; color: var(--olive); margin-bottom: 1.5rem; text-align: center;">Luxury Options</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+
+                    <!-- La Peschiera -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                        <h4 style="font-size: 1.5rem; color: var(--charcoal); margin-bottom: 0.5rem;">La Peschiera</h4>
+                        <p style="font-size: 0.85rem; color: var(--olive); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem;">Monopoli/Capitolo • 5 min from venue</p>
+                        <p style="font-size: 1.3rem; font-weight: 500; color: var(--terracotta); margin-bottom: 1rem;">€400-900/night</p>
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: #555; margin-bottom: 1rem;">
+                            Five-star beachfront resort on the Adriatic. 6 outdoor pools with natural spring water, private beach,
+                            award-winning restaurant, and sea-facing balconies. Member of Small Luxury Hotels of the World.
+                        </p>
+                        <p style="font-size: 0.85rem; color: #888;">★ 9.4/10 Rating • Best for top-tier luxury seekers</p>
+                    </div>
+
+                    <!-- Masseria Il Melograno -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                        <h4 style="font-size: 1.5rem; color: var(--charcoal); margin-bottom: 0.5rem;">Masseria Il Melograno</h4>
+                        <p style="font-size: 0.85rem; color: var(--olive); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem;">Monopoli • 10 min from venue</p>
+                        <p style="font-size: 1.3rem; font-weight: 500; color: var(--terracotta); margin-bottom: 1rem;">€350-500/night</p>
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: #555; margin-bottom: 1rem;">
+                            Historic 17th-century fortified masseria, Puglia's first luxury hotel conversion. Set among 5 hectares
+                            of olive groves and citrus trees. Private beach shuttle, acclaimed restaurant, indoor pool.
+                        </p>
+                        <p style="font-size: 0.85rem; color: #888;">Small Luxury Hotels • Best for authentic Puglian elegance</p>
+                    </div>
+
+                    <!-- Hotel Don Ferrante -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                        <h4 style="font-size: 1.5rem; color: var(--charcoal); margin-bottom: 0.5rem;">Hotel Don Ferrante</h4>
+                        <p style="font-size: 0.85rem; color: var(--olive); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem;">Monopoli Historic Center • 5-8 min</p>
+                        <p style="font-size: 1.3rem; font-weight: 500; color: var(--terracotta); margin-bottom: 1rem;">€200-400/night</p>
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: #555; margin-bottom: 1rem;">
+                            Converted ancient fortress with only 10 rooms. Cliffside location with panoramic Mediterranean views,
+                            intimate boutique atmosphere, hydromassage pool. Walking distance to old town dining.
+                        </p>
+                        <p style="font-size: 0.85rem; color: #888;">#1 Hotel in Monopoli • Best for boutique charm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mid-Range Options -->
+            <div style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.8rem; color: var(--olive); margin-bottom: 1.5rem; text-align: center;">Mid-Range Options</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+
+                    <!-- Torre Cintola -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                        <h4 style="font-size: 1.5rem; color: var(--charcoal); margin-bottom: 0.5rem;">Torre Cintola Greenblu</h4>
+                        <p style="font-size: 0.85rem; color: var(--olive); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem;">Monopoli Seafront • 10 min from venue</p>
+                        <p style="font-size: 1.3rem; font-weight: 500; color: var(--terracotta); margin-bottom: 1rem;">€150-180/night</p>
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: #555; margin-bottom: 1rem;">
+                            4-star resort with private beach access, two pools, full-service spa, and 283 iconic dome-shaped rooms.
+                            Sports facilities, on-site restaurants, and excellent value for families.
+                        </p>
+                        <p style="font-size: 0.85rem; color: #888;">4-Star Resort • Best for families & value seekers</p>
+                    </div>
+
+                    <!-- Palazzo Indelli -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                        <h4 style="font-size: 1.5rem; color: var(--charcoal); margin-bottom: 0.5rem;">Palazzo Indelli</h4>
+                        <p style="font-size: 0.85rem; color: var(--olive); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem;">Monopoli Historic Center • 5 min</p>
+                        <p style="font-size: 1.3rem; font-weight: 500; color: var(--terracotta); margin-bottom: 1rem;">€90-180/night</p>
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: #555; margin-bottom: 1rem;">
+                            Boutique hotel steps from the harbor with excellent value. Prime location in historic center,
+                            walking distance to beach, on-site restaurant, and easy access to local dining.
+                        </p>
+                        <p style="font-size: 0.85rem; color: #888;">Boutique Hotel • Best for central location & walkability</p>
+                    </div>
+
+                    <!-- Hotel Grotta Palazzese -->
+                    <div style="background: white; padding: 1.75rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                        <h4 style="font-size: 1.5rem; color: var(--charcoal); margin-bottom: 0.5rem;">Hotel Grotta Palazzese</h4>
+                        <p style="font-size: 0.85rem; color: var(--olive); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem;">Polignano a Mare • 15 min from venue</p>
+                        <p style="font-size: 1.3rem; font-weight: 500; color: var(--terracotta); margin-bottom: 1rem;">€300-600/night</p>
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: #555; margin-bottom: 1rem;">
+                            Iconic 5-star cliff-top hotel with world-renowned restaurant set inside a natural cave.
+                            25 luxury rooms with sea views. Unforgettable Puglia experience in stunning Polignano.
+                        </p>
+                        <p style="font-size: 0.85rem; color: #888;">5-Star Iconic • Best for special experience seekers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Recommendation -->
+            <div style="max-width: 1000px; margin: 0 auto; background: linear-gradient(135deg, var(--olive) 0%, #4a5a3e 100%); padding: 2.5rem; border-radius: 12px; text-align: center; color: white;">
+                <h3 style="font-size: 1.6rem; margin-bottom: 1rem; color: white;">Booking Recommendations</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 0.5rem; opacity: 0.95;">
+                    <strong>For luxury guests:</strong> La Peschiera (beachfront) or Il Melograno (estate elegance)
+                </p>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 0.5rem; opacity: 0.95;">
+                    <strong>For best value:</strong> Torre Cintola (resort amenities) or Palazzo Indelli (boutique charm)
+                </p>
+                <p style="font-size: 0.95rem; margin-top: 1.5rem; opacity: 0.85; font-style: italic;">
+                    Book early for Fall 2027 — these are popular properties during peak season
+                </p>
+            </div>
+        </div>
     </section>
 
     <section class="budget-section" id="budget">
@@ -1975,6 +2117,151 @@
             clearTimeout(resizeTimeout);
             resizeTimeout = setTimeout(createFlightMap, 250);
         });
+
+        // Accommodation Map with Leaflet.js
+        function initAccommodationMap() {
+            // Load Leaflet CSS and JS
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+            document.head.appendChild(link);
+
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+            script.onload = createAccommodationMap;
+            document.body.appendChild(script);
+        }
+
+        function createAccommodationMap() {
+            const mapDiv = document.getElementById('accommodationMap');
+            if (!mapDiv || typeof L === 'undefined') return;
+
+            // Center on Masseria Spina
+            const map = L.map('accommodationMap').setView([40.9511, 17.2908], 12);
+
+            // Add tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                maxZoom: 18
+            }).addTo(map);
+
+            // Custom icons
+            const venueIcon = L.divIcon({
+                className: 'custom-marker',
+                html: `<div style="background: #c4724e; width: 30px; height: 30px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 8px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 16px;">V</div>`,
+                iconSize: [30, 30],
+                iconAnchor: [15, 15]
+            });
+
+            const luxuryIcon = L.divIcon({
+                className: 'custom-marker',
+                html: `<div style="background: #b8956e; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3);"></div>`,
+                iconSize: [24, 24],
+                iconAnchor: [12, 12]
+            });
+
+            const midRangeIcon = L.divIcon({
+                className: 'custom-marker',
+                html: `<div style="background: #8fa578; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3);"></div>`,
+                iconSize: [24, 24],
+                iconAnchor: [12, 12]
+            });
+
+            // Locations
+            const locations = [
+                {
+                    name: 'Masseria Spina Resort',
+                    coords: [40.9511, 17.2908],
+                    type: 'venue',
+                    description: 'Wedding Venue • 22-32 beds on-site',
+                    price: ''
+                },
+                {
+                    name: 'La Peschiera',
+                    coords: [40.9842, 17.3525],
+                    type: 'luxury',
+                    description: '5-star beachfront resort',
+                    price: '€400-900/night',
+                    distance: '5 min drive'
+                },
+                {
+                    name: 'Masseria Il Melograno',
+                    coords: [40.9456, 17.2978],
+                    type: 'luxury',
+                    description: 'Historic 17th-century masseria',
+                    price: '€350-500/night',
+                    distance: '10 min drive'
+                },
+                {
+                    name: 'Hotel Don Ferrante',
+                    coords: [40.9503, 17.3082],
+                    type: 'luxury',
+                    description: 'Boutique cliffside fortress',
+                    price: '€200-400/night',
+                    distance: '5-8 min drive'
+                },
+                {
+                    name: 'Torre Cintola Greenblu',
+                    coords: [40.9650, 17.3200],
+                    type: 'midrange',
+                    description: '4-star seafront resort',
+                    price: '€150-180/night',
+                    distance: '10 min drive'
+                },
+                {
+                    name: 'Palazzo Indelli',
+                    coords: [40.9545, 17.3095],
+                    type: 'midrange',
+                    description: 'Historic center boutique hotel',
+                    price: '€90-180/night',
+                    distance: '5 min drive'
+                },
+                {
+                    name: 'Hotel Grotta Palazzese',
+                    coords: [40.9953, 17.2344],
+                    type: 'midrange',
+                    description: 'Iconic cave restaurant hotel',
+                    price: '€300-600/night',
+                    distance: '15 min drive'
+                }
+            ];
+
+            // Add markers
+            locations.forEach(loc => {
+                let icon;
+                if (loc.type === 'venue') icon = venueIcon;
+                else if (loc.type === 'luxury') icon = luxuryIcon;
+                else icon = midRangeIcon;
+
+                const popupContent = `
+                    <div style="font-family: 'Montserrat', sans-serif; min-width: 200px;">
+                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: #2d2d2d; margin: 0 0 0.5rem 0;">
+                            ${loc.name}
+                        </h4>
+                        <p style="margin: 0.25rem 0; font-size: 0.9rem; color: #666;">
+                            ${loc.description}
+                        </p>
+                        ${loc.price ? `<p style="margin: 0.25rem 0; font-size: 1rem; color: #c4724e; font-weight: 500;">${loc.price}</p>` : ''}
+                        ${loc.distance ? `<p style="margin: 0.25rem 0; font-size: 0.85rem; color: #5c6b4d;">${loc.distance} from venue</p>` : ''}
+                    </div>
+                `;
+
+                L.marker(loc.coords, { icon: icon })
+                    .addTo(map)
+                    .bindPopup(popupContent);
+            });
+
+            // Fit bounds to show all markers
+            const group = L.featureGroup(locations.map(loc => L.marker(loc.coords)));
+            map.fitBounds(group.getBounds().pad(0.1));
+        }
+
+        // Initialize accommodation map when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initAccommodationMap);
+        } else {
+            initAccommodationMap();
+        }
     </script>
 </body>
 </html>
