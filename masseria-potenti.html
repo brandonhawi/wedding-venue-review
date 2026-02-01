@@ -1061,8 +1061,8 @@
             </div>
             <div class="fact-card">
                 <div class="icon">&#127968;</div>
-                <h4>Up to 100 Beds</h4>
-                <p>21 rooms + 3 private villas (4 bed each)</p>
+                <h4>44-100 Beds</h4>
+                <p>21 rooms (max 62 guests) + 3 villas (up to 38 more)</p>
             </div>
             <div class="fact-card">
                 <div class="icon">&#127860;</div>
@@ -1307,34 +1307,34 @@
                 <div class="control-group">
                     <label>Menu Package</label>
                     <select id="menuSelect">
-                        <option value="180" selected>Base Menu - €180/person</option>
-                        <option value="195">Base + Raw Sea - €195/person</option>
-                        <option value="210">Premium Menu - €210/person</option>
-                        <option value="230">Exclusive Menu - €230/person</option>
+                        <option value="180" selected>Base Menu - €180/person + VAT</option>
+                        <option value="210">Enhanced Menu - €210/person + VAT</option>
+                        <option value="230">Premium Menu - €230/person + VAT</option>
+                        <option value="250">Luxury Menu - €250/person + VAT</option>
                     </select>
                 </div>
 
                 <div class="control-group">
                     <label>Open Bar Hours</label>
                     <select id="barSelect">
-                        <option value="3" selected>3 Hours - €4,000</option>
-                        <option value="4">4 Hours - €4,800</option>
-                        <option value="5">5 Hours - €5,600</option>
-                        <option value="6">6 Hours - €6,400</option>
+                        <option value="3" selected>3 Hours (base rate + VAT)</option>
+                        <option value="4">4 Hours (base + 1hr extra + VAT)</option>
+                        <option value="5">5 Hours (base + 2hr extra + VAT)</option>
+                        <option value="6">6 Hours (base + 3hr extra + VAT)</option>
                     </select>
                 </div>
 
                 <div class="control-group">
-                    <label>Private Villas</label>
+                    <label>Private Villas (4 beds each)</label>
                     <div class="checkbox-group">
                         <label class="checkbox-item" data-addon="villa1" data-price="1600">
-                            <input type="checkbox" id="villa1"> Villa 1 (€1,600/night)
+                            <input type="checkbox" id="villa1"> Villa 1 (€1,600/night incl. breakfast)
                         </label>
                         <label class="checkbox-item" data-addon="villa2" data-price="1600">
-                            <input type="checkbox" id="villa2"> Villa 2 (€1,600/night)
+                            <input type="checkbox" id="villa2"> Villa 2 (€1,600/night incl. breakfast)
                         </label>
                         <label class="checkbox-item" data-addon="villa3" data-price="1600">
-                            <input type="checkbox" id="villa3"> Villa 3 (€1,600/night)
+                            <input type="checkbox" id="villa3"> Villa 3 (€1,600/night incl. breakfast)
                         </label>
                     </div>
                 </div>
@@ -1343,10 +1343,10 @@
                     <label>Food Add-ons</label>
                     <div class="checkbox-group">
                         <label class="checkbox-item" data-addon="corner" data-price="15">
-                            <input type="checkbox" id="corner"> Food Corner (+€15/pp)
+                            <input type="checkbox" id="corner"> Food Corner (+€15/pp + VAT)
                         </label>
                         <label class="checkbox-item" data-addon="seafoodcorner" data-price="20">
-                            <input type="checkbox" id="seafoodcorner"> Seafood Corner (+€20/pp)
+                            <input type="checkbox" id="seafoodcorner"> Seafood Corner (+€20/pp + VAT)
                         </label>
                     </div>
                 </div>
@@ -1355,10 +1355,10 @@
                     <label>Additional Meals</label>
                     <div class="checkbox-group">
                         <label class="checkbox-item" data-addon="welcome" data-price="60">
-                            <input type="checkbox" id="welcome"> Welcome Dinner (+€60/pp)
+                            <input type="checkbox" id="welcome"> Welcome Dinner (+€60/pp + VAT)
                         </label>
                         <label class="checkbox-item" data-addon="farewell" data-price="50">
-                            <input type="checkbox" id="farewell"> Farewell Brunch (+€50/pp)
+                            <input type="checkbox" id="farewell"> Farewell Brunch (+€50/pp + VAT)
                         </label>
                     </div>
                 </div>
@@ -1394,7 +1394,8 @@
             <div class="matrix-section">
                 <h3>Full Budget Matrix</h3>
                 <p style="text-align: center; color: #666; margin-bottom: 1.5rem; font-size: 0.9rem;">
-                    3-night exclusive use costs by guest count (includes venue buyout, base menu, 3hr open bar)
+                    3-night exclusive use costs by guest count (includes venue buyout, base menu, 3hr open bar)<br>
+                    <strong>Note:</strong> €4,000/day minimum dining spend required (cumulative lunch + dinner)
                 </p>
                 <table class="budget-matrix">
                     <thead>
@@ -1413,7 +1414,7 @@
                     </tbody>
                 </table>
                 <p style="text-align: center; color: #666; margin-top: 1rem; font-size: 0.8rem;">
-                    * Includes 3 nights @ €10,000/night + 10% VAT + base menu (€180/pp) + 3hr open bar (€4,000). USD at €1 = $1.09
+                    * Includes 3 nights @ €10,000/night + 10% VAT + base menu (€180/pp + 10% VAT) + 3hr open bar (€4,000 + 10% VAT for ≤100 guests, €40/pp + 10% VAT for >100). Villas priced at €1,600/night incl. breakfast. USD at €1 = $1.09
                 </p>
             </div>
         </div>
@@ -1429,25 +1430,26 @@
             <div class="menu-card recommended">
                 <span class="badge">Base Package</span>
                 <h4>Classic Pugliese</h4>
-                <div class="menu-price">€180 <span>/person</span></div>
+                <div class="menu-price">€180 <span>/person + VAT</span></div>
                 <ul class="menu-features">
                     <li>Aperitif with cocktails</li>
-                    <li>Buffet with 10 Puglian starters</li>
+                    <li>Buffet with 10 Puglian starters of your choice</li>
                     <li>First course (pasta or risotto)</li>
                     <li>Second course (meat or fish)</li>
                     <li>Dessert buffet (6 options)</li>
                     <li>Wine: 1 bottle per 4 guests</li>
                     <li>Prosecco: 1 bottle per 6 guests</li>
+                    <li>No time limit for the party</li>
                 </ul>
             </div>
 
             <div class="menu-card">
                 <h4>Menu Add-ons</h4>
-                <div class="menu-price">+€15-20 <span>/person</span></div>
+                <div class="menu-price">+€15-20 <span>/person + VAT</span></div>
                 <ul class="menu-features">
-                    <li>Standard Food Corner (+€15/pp)</li>
+                    <li>Themed Food Corner (+€15/pp)</li>
                     <li>Seafood Corner (+€20/pp)</li>
-                    <li>Raw Seafood Bar (+€15/pp)</li>
+                    <li>Open bar required for after-dinner festivities</li>
                     <li>Pizza Station from Ancient Oven</li>
                     <li>Gin Tasting (sister property)</li>
                     <li>Wine Pairing with Primitivo</li>
@@ -1457,15 +1459,15 @@
 
             <div class="menu-card">
                 <h4>Additional Meals</h4>
-                <div class="menu-price">€50-60 <span>/person</span></div>
+                <div class="menu-price">€50-60 <span>/person + VAT</span></div>
                 <ul class="menu-features">
                     <li>Welcome Dinner in Cave (€60/pp)</li>
                     <li>Farewell Brunch by Pool (€50/pp)</li>
                     <li>Beach Bistro Lunch (€45/pp)</li>
                     <li>Trullo Intimate Dinner (€70/pp)</li>
-                    <li>Minimum €4,000 daily spend required</li>
-                    <li>Organic farm ingredients</li>
-                    <li>Own olive oil & wine included</li>
+                    <li>€4,000/day minimum dining spend (cumulative)</li>
+                    <li>€3,000/day fee for external events</li>
+                    <li>Organic farm ingredients included</li>
                 </ul>
             </div>
         </div>
@@ -1497,14 +1499,14 @@
             <div class="cons">
                 <h3>Things to Consider</h3>
                 <ul>
-                    <li>Expensive: €33,000 base for 3 nights exclusive use</li>
-                    <li>Requires €4,000 minimum meal spend per day</li>
-                    <li>€3,000 fee if events held elsewhere</li>
+                    <li>Expensive: €33,000 + VAT base for 3 nights exclusive use</li>
+                    <li>Requires €4,000/day minimum dining spend (cumulative lunch + dinner)</li>
+                    <li>€3,000 + VAT fee if events held outside venue during stay</li>
                     <li>3-night minimum stay required</li>
                     <li>More remote in Salento (not near coast towns)</li>
                     <li>Likely exceeds $30k budget significantly</li>
                     <li>Best for 66+ guests to maximize value</li>
-                    <li>Complex pricing structure</li>
+                    <li>Complex pricing structure with multiple add-ons</li>
                 </ul>
             </div>
         </div>
@@ -1549,15 +1551,15 @@
         const checkboxItems = document.querySelectorAll('.checkbox-item');
 
         function getBarCost(hours, guests) {
-            if (guests >= 100) {
-                // €40 per person for 3 hours, €20 per additional hour
+            if (guests > 100) {
+                // Over 100 guests: €40 per person for 3 hours, €20 per additional hour
                 const baseHours = 3;
                 const baseCost = guests * 40;
                 const extraHours = Math.max(0, hours - baseHours);
                 const extraCost = extraHours * guests * 20;
                 return baseCost + extraCost;
             } else {
-                // Flat rate: €4,000 for 3 hours, €800 per extra hour
+                // 100 or fewer guests: Flat rate €4,000 for 3 hours, €800 per extra hour
                 const baseHours = 3;
                 const baseCost = 4000;
                 const extraHours = Math.max(0, hours - baseHours);
@@ -1593,13 +1595,13 @@
                     const addon = item.dataset.addon;
 
                     if (addon.includes('villa')) {
-                        // Villa costs are per night
-                        const villaCost = price * nights * VAT_RATE;
+                        // Villa costs are per night, including breakfast
+                        const villaCost = price * nights;
                         villasCost += villaCost;
                         addonItems.push({
                             name: item.textContent.trim(),
                             price: villaCost,
-                            detail: `${nights} nights × €${price}/night`
+                            detail: `${nights} nights × €${price}/night (incl. breakfast)`
                         });
                     } else {
                         // Per-person costs
@@ -1640,7 +1642,7 @@
                 <tr>
                     <td>
                         <div class="item-name">Open Bar (${barHours} hours)</div>
-                        <div class="item-detail">${guests >= 100 ? '€40/person base, €20/hr extra' : '€4,000 base, €800/hr extra'} + 10% VAT</div>
+                        <div class="item-detail">${guests > 100 ? '€40/person base + €20/person/hr extra' : '€4,000 base + €800/hr extra'} + 10% VAT</div>
                     </td>
                     <td class="item-price">€${Math.round(barCost).toLocaleString()}</td>
                 </tr>
@@ -1713,7 +1715,7 @@
                     const rental = NIGHTLY_RATE * nights * VAT_RATE;
                     const catering = guests * config.menuPrice * VAT_RATE;
                     const bar = getBarCost(3, guests) * VAT_RATE;
-                    const villas = (config.villas || 0) * 1600 * nights * VAT_RATE;
+                    const villas = (config.villas || 0) * 1600 * nights; // Villa price includes breakfast
 
                     const total = rental + catering + bar + villas;
                     const usd = Math.round(total * EXCHANGE_RATE);
