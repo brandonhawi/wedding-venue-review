@@ -1918,7 +1918,7 @@
                 lax: { coords: [-118.4085, 33.9425], code: 'LAX', name: 'Los Angeles' },
                 rome: { coords: [12.4964, 41.9028], code: 'FCO', name: 'Rome' },
                 bari: { coords: [16.8719, 41.1172], code: 'BRI', name: 'Bari' },
-                venue: { coords: [17.2908, 40.9511], name: 'Masseria Spina' }
+                venue: { coords: [17.290833, 40.951067], name: 'Masseria Spina' }
             };
 
             // Create great circle paths
@@ -2137,7 +2137,7 @@
             if (!mapDiv || typeof L === 'undefined') return;
 
             // Center on Masseria Spina
-            const map = L.map('accommodationMap').setView([40.9511, 17.2908], 12);
+            const map = L.map('accommodationMap').setView([40.951067, 17.290833], 12);
 
             // Add tile layer
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -2167,18 +2167,18 @@
                 iconAnchor: [12, 12]
             });
 
-            // Locations
+            // Locations (verified GPS coordinates from official sources)
             const locations = [
                 {
                     name: 'Masseria Spina Resort',
-                    coords: [40.9511, 17.2908],
+                    coords: [40.951067, 17.290833],
                     type: 'venue',
                     description: 'Wedding Venue • 22-32 beds on-site',
                     price: ''
                 },
                 {
                     name: 'La Peschiera',
-                    coords: [40.9842, 17.3525],
+                    coords: [40.89764, 17.36151],
                     type: 'luxury',
                     description: '5-star beachfront resort',
                     price: '€400-900/night',
@@ -2186,7 +2186,7 @@
                 },
                 {
                     name: 'Masseria Il Melograno',
-                    coords: [40.9456, 17.2978],
+                    coords: [40.9492, 17.2972],
                     type: 'luxury',
                     description: 'Historic 17th-century masseria',
                     price: '€350-500/night',
@@ -2194,7 +2194,7 @@
                 },
                 {
                     name: 'Hotel Don Ferrante',
-                    coords: [40.9503, 17.3082],
+                    coords: [40.9507, 17.3030],
                     type: 'luxury',
                     description: 'Boutique cliffside fortress',
                     price: '€200-400/night',
@@ -2202,7 +2202,7 @@
                 },
                 {
                     name: 'Torre Cintola Greenblu',
-                    coords: [40.9650, 17.3200],
+                    coords: [40.917254, 17.341306],
                     type: 'midrange',
                     description: '4-star seafront resort',
                     price: '€150-180/night',
@@ -2210,7 +2210,7 @@
                 },
                 {
                     name: 'Palazzo Indelli',
-                    coords: [40.9545, 17.3095],
+                    coords: [40.95305, 17.30343],
                     type: 'midrange',
                     description: 'Historic center boutique hotel',
                     price: '€90-180/night',
@@ -2218,7 +2218,7 @@
                 },
                 {
                     name: 'Hotel Grotta Palazzese',
-                    coords: [40.9953, 17.2344],
+                    coords: [40.9964, 17.2207],
                     type: 'midrange',
                     description: 'Iconic cave restaurant hotel',
                     price: '€300-600/night',
