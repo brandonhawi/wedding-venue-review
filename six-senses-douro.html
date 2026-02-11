@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Senses Douro Valley - Wedding Venue Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --olive: #5c6b4d;
+            --olive-light: #8fa578;
+            --terracotta: #c4724e;
+            --cream: #f8f5f0;
+            --stone: #d4cdc4;
+            --charcoal: #2d2d2d;
+            --gold: #b8956e;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
+                        url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 5rem);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.1em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .location {
+            font-size: 1.2rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .hero .tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            opacity: 0.95;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: var(--olive);
+            padding: 0.5rem 1.5rem;
+            border-radius: 2px;
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-top: 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        nav.visible {
+            transform: translateY(0);
+        }
+
+        nav a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--olive);
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header .subtitle {
+            color: var(--olive);
+            font-size: 0.9rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        /* Quick Facts */
+        .quick-facts {
+            background: var(--white);
+            padding: 4rem 2rem;
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .fact-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .fact-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .fact-card h4 {
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+
+        .fact-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Photo Gallery */
+        .gallery {
+            background: var(--stone);
+            padding: 5rem 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            gap: 1rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .gallery-item:nth-child(1) { grid-column: span 8; grid-row: span 2; }
+        .gallery-item:nth-child(2) { grid-column: span 4; }
+        .gallery-item:nth-child(3) { grid-column: span 4; }
+        .gallery-item:nth-child(4) { grid-column: span 4; }
+        .gallery-item:nth-child(5) { grid-column: span 4; }
+        .gallery-item:nth-child(6) { grid-column: span 4; }
+
+        /* Spaces Section */
+        .spaces-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .space-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .space-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .space-card-content {
+            padding: 1.5rem;
+        }
+
+        .space-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--charcoal);
+        }
+
+        .space-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .space-tag {
+            display: inline-block;
+            background: var(--olive-light);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 2px;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-top: 1rem;
+        }
+
+        /* Map Section */
+        .map-section {
+            background: var(--white);
+        }
+
+        .maps-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        @media (max-width: 1000px) {
+            .maps-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .map-card {
+            background: var(--cream);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .map-card-header {
+            padding: 1.5rem;
+            background: var(--white);
+            border-bottom: 1px solid var(--stone);
+        }
+
+        .map-card-header h3 {
+            font-size: 1.3rem;
+            color: var(--charcoal);
+            margin-bottom: 0.25rem;
+        }
+
+        .map-card-header p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .map-frame {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        .map-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Flight Path D3 Map */
+        .flight-map {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #0f1419 0%, #1a2332 40%, #1e3a5f 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .flight-map svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .land {
+            fill: #2a3f4f;
+            stroke: #3d5a6e;
+            stroke-width: 0.5;
+        }
+
+        .land:hover {
+            fill: #345566;
+        }
+
+        .graticule {
+            fill: none;
+            stroke: rgba(255,255,255,0.05);
+            stroke-width: 0.5;
+        }
+
+        .flight-route {
+            fill: none;
+            stroke: url(#routeGradient);
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            filter: drop-shadow(0 0 8px rgba(184, 149, 110, 0.5));
+        }
+
+        .flight-route-glow {
+            fill: none;
+            stroke: rgba(184, 149, 110, 0.3);
+            stroke-width: 8;
+            stroke-linecap: round;
+            filter: blur(4px);
+        }
+
+        .route-dash {
+            fill: none;
+            stroke: rgba(255,255,255,0.6);
+            stroke-width: 1;
+            stroke-dasharray: 4, 8;
+        }
+
+        .city-marker {
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+        }
+
+        .city-marker-ring {
+            fill: none;
+            stroke: rgba(184, 149, 110, 0.6);
+            stroke-width: 1.5;
+        }
+
+        .city-marker-pulse {
+            fill: none;
+            stroke: rgba(184, 149, 110, 0.4);
+            stroke-width: 1;
+            animation: pulse 2s ease-out infinite;
+        }
+
+        @keyframes pulse {
+            0% { r: 8; opacity: 1; }
+            100% { r: 20; opacity: 0; }
+        }
+
+        .city-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            fill: #fff;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .city-sublabel {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 9px;
+            font-weight: 400;
+            fill: rgba(255,255,255,0.7);
+        }
+
+        .plane-icon {
+            fill: #b8956e;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+            transition: transform 0.1s ease-out;
+        }
+
+        .venue-marker {
+            fill: #c4724e;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+        }
+
+        .venue-star {
+            fill: #f6e05e;
+            filter: drop-shadow(0 0 6px rgba(246, 224, 94, 0.6));
+        }
+
+        .flight-map svg {
+            cursor: grab;
+        }
+
+        .flight-map svg:active {
+            cursor: grabbing;
+        }
+
+        .zoom-hint {
+            position: absolute;
+            bottom: 8px;
+            left: 10px;
+            font-size: 10px;
+            color: rgba(255,255,255,0.4);
+            pointer-events: none;
+        }
+
+        .leg-info {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            background: var(--white);
+        }
+
+        .leg {
+            text-align: center;
+            padding: 0.5rem 1rem;
+        }
+
+        .leg-route {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--charcoal);
+        }
+
+        .leg-duration {
+            font-size: 0.75rem;
+            color: var(--olive);
+            margin-top: 0.25rem;
+        }
+
+        .leg-divider {
+            width: 1px;
+            background: var(--stone);
+        }
+
+        .route-info {
+            padding: 1.5rem;
+            background: var(--white);
+        }
+
+        .route-info h4 {
+            font-size: 1rem;
+            color: var(--olive);
+            margin-bottom: 0.75rem;
+        }
+
+        .route-info p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .route-total {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--stone);
+        }
+
+        .route-total .time {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--charcoal);
+        }
+
+        .route-total .label {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Budget Calculator */
+        .budget-section {
+            background: linear-gradient(135deg, var(--olive) 0%, #4a5a3e 100%);
+            color: var(--white);
+            padding: 5rem 2rem;
+        }
+
+        .budget-section .section-header h2 {
+            color: var(--white);
+        }
+
+        .budget-section .subtitle {
+            color: var(--olive-light);
+        }
+
+        .budget-calculator {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 3rem;
+            color: var(--charcoal);
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .calculator-controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--stone);
+        }
+
+        .control-group label {
+            display: block;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--olive);
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+        }
+
+        .control-group select,
+        .control-group input[type="range"] {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--stone);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            background: var(--white);
+            cursor: pointer;
+        }
+
+        .control-group select:focus {
+            outline: none;
+            border-color: var(--olive);
+        }
+
+        .slider-container {
+            position: relative;
+        }
+
+        .slider-value {
+            text-align: center;
+            font-size: 2rem;
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            height: 8px;
+            background: var(--stone);
+            border-radius: 4px;
+            border: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 24px;
+            height: 24px;
+            background: var(--olive);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        /* Budget Results */
+        .budget-results {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        @media (max-width: 800px) {
+            .budget-results {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .breakdown-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .breakdown-table th {
+            text-align: left;
+            padding: 1rem;
+            background: var(--cream);
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--olive);
+        }
+
+        .breakdown-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--stone);
+        }
+
+        .breakdown-table .item-name {
+            font-weight: 500;
+        }
+
+        .breakdown-table .item-detail {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .breakdown-table .item-price {
+            text-align: right;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .breakdown-table tr.total-row td {
+            border-top: 2px solid var(--charcoal);
+            border-bottom: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding-top: 1.5rem;
+        }
+
+        .total-display {
+            background: var(--cream);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .total-display .label {
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--olive);
+            margin-bottom: 0.5rem;
+        }
+
+        .total-display .amount {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            color: var(--charcoal);
+            line-height: 1;
+        }
+
+        .total-display .amount.over-budget {
+            color: var(--terracotta);
+        }
+
+        .total-display .amount.under-budget {
+            color: var(--olive);
+        }
+
+        .total-display .budget-status {
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .total-display .budget-status.good {
+            background: rgba(92, 107, 77, 0.15);
+            color: var(--olive);
+        }
+
+        .total-display .budget-status.warning {
+            background: rgba(184, 149, 110, 0.2);
+            color: var(--gold);
+        }
+
+        .total-display .budget-status.over {
+            background: rgba(196, 114, 78, 0.15);
+            color: var(--terracotta);
+        }
+
+        .remaining {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--stone);
+        }
+
+        .remaining .label {
+            font-size: 0.75rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .remaining .amount {
+            font-size: 1.5rem;
+        }
+
+        /* Budget Matrix */
+        .matrix-section {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--stone);
+        }
+
+        .matrix-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .budget-matrix {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .budget-matrix th {
+            background: var(--olive);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .budget-matrix th:first-child {
+            text-align: left;
+        }
+
+        .budget-matrix td {
+            padding: 0.75rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--stone);
+        }
+
+        .budget-matrix td:first-child {
+            text-align: left;
+            font-weight: 500;
+            background: var(--cream);
+        }
+
+        .budget-matrix .good { color: var(--olive); font-weight: 600; }
+        .budget-matrix .warning { color: var(--gold); font-weight: 600; }
+        .budget-matrix .over { color: var(--terracotta); font-weight: 600; }
+
+        /* Pros/Cons */
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        @media (max-width: 700px) {
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .pros h3 { color: var(--olive); }
+        .cons h3 { color: var(--terracotta); }
+
+        .pros-cons ul {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .pros-cons li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--stone);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .pros li::before {
+            content: "\2713";
+            color: var(--olive);
+            font-weight: bold;
+        }
+
+        .cons li::before {
+            content: "!";
+            color: var(--terracotta);
+            font-weight: bold;
+            background: rgba(196, 114, 78, 0.15);
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 0.8rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--charcoal);
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--olive);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--olive-light);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--charcoal);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+            }
+
+            .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
+            .gallery-item:nth-child(n) { grid-column: span 1; }
+
+            .budget-calculator {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <a href="index.html" style="margin-right: auto;">&larr; Back to All Venues</a>
+        <a href="#overview">Overview</a>
+        <a href="#spaces">Spaces</a>
+        <a href="#location">Location</a>
+        <a href="#budget">Budget</a>
+        <a href="#considerations">Details</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Six Senses Douro Valley</h1>
+            <p class="location">Lamego, Douro Valley, Portugal</p>
+            <p class="tagline">World-class luxury and wellness in the heart of Portugal's UNESCO wine country</p>
+            <span class="status-badge">Proposal Received</span>
+        </div>
+    </section>
+
+    <section class="quick-facts" id="overview">
+        <div class="facts-grid">
+            <div class="fact-card">
+                <div class="icon">&#127965;</div>
+                <h4>Up to 80 Guests</h4>
+                <p>Small wedding category, no full buyout required</p>
+            </div>
+            <div class="fact-card">
+                <div class="icon">&#127968;</div>
+                <h4>~60 Rooms</h4>
+                <p>Min. 10 rooms required at &euro;1,500/night</p>
+            </div>
+            <div class="fact-card">
+                <div class="icon">&#127860;</div>
+                <h4>&euro;475/Person</h4>
+                <p>All meals, drinks, and service included</p>
+            </div>
+            <div class="fact-card">
+                <div class="icon">&#128337;</div>
+                <h4>Until Midnight</h4>
+                <p>Music max 80 dB without buyout</p>
+            </div>
+            <div class="fact-card">
+                <div class="icon">&#9992;</div>
+                <h4>1.5 hrs from Porto</h4>
+                <p>Porto Airport (OPO) access</p>
+            </div>
+            <div class="fact-card">
+                <div class="icon">&#127863;</div>
+                <h4>UNESCO Heritage</h4>
+                <p>World-famous Douro wine region</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="spaces">
+        <div class="section-header">
+            <p class="subtitle">The Venue</p>
+            <h2>Douro Valley Luxury</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200" alt="Douro Valley panorama">
+                <div class="overlay">
+                    <strong>Douro Valley Views</strong>
+                    <p>UNESCO World Heritage wine region</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600" alt="Luxury resort">
+                <div class="overlay">
+                    <strong>Six Senses Resort</strong>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600" alt="Wine">
+                <div class="overlay">
+                    <strong>World-Class Wine</strong>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600" alt="Luxury hotel">
+                <div class="overlay">
+                    <strong>Elegant Interiors</strong>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600" alt="Hotel terrace">
+                <div class="overlay">
+                    <strong>Terrace Dining</strong>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600" alt="Vineyard landscape">
+                <div class="overlay">
+                    <strong>Vineyard Landscape</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <p class="subtitle">Ceremony & Reception</p>
+            <h2>Available Spaces</h2>
+        </div>
+        <div class="spaces-grid">
+            <div class="space-card">
+                <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600" alt="Olive Garden">
+                <div class="space-card-content">
+                    <h4>Olive Garden</h4>
+                    <p>A serene outdoor setting among ancient olive trees, perfect for romantic ceremonies overlooking the Douro Valley terraces.</p>
+                    <p style="margin-top: 0.75rem; font-weight: 500; color: var(--terracotta);">&euro;1,300 venue rental</p>
+                    <span class="space-tag">Ceremony</span>
+                </div>
+            </div>
+            <div class="space-card">
+                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600" alt="Organic Garden">
+                <div class="space-card-content">
+                    <h4>Organic Garden</h4>
+                    <p>The resort's lush organic garden provides an intimate, nature-immersed setting for cocktails and dinner under the stars.</p>
+                    <p style="margin-top: 0.75rem; font-weight: 500; color: var(--terracotta);">&euro;2,500 venue rental</p>
+                    <span class="space-tag">Cocktail & Dinner</span>
+                </div>
+            </div>
+            <div class="space-card">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="Resort main building">
+                <div class="space-card-content">
+                    <h4>Quinta Manor House</h4>
+                    <p>The restored 19th-century manor house offers elegant indoor spaces as weather backup or for intimate pre-wedding gatherings.</p>
+                    <span class="space-tag">All-weather</span>
+                </div>
+            </div>
+            <div class="space-card">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600" alt="Spa & Wellness">
+                <div class="space-card-content">
+                    <h4>Six Senses Spa</h4>
+                    <p>World-class spa and wellness facilities for bridal party pampering, featuring signature treatments and thermal experiences.</p>
+                    <span class="space-tag">Wellness</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section" id="location">
+        <div class="section-header">
+            <p class="subtitle">Getting There</p>
+            <h2>Location & Travel</h2>
+        </div>
+        <div class="maps-wrapper">
+            <!-- Flight Path Map -->
+            <div class="map-card">
+                <div class="map-card-header">
+                    <h3>Your Journey from San Francisco</h3>
+                    <p>SFO to Six Senses via Lisbon/Porto</p>
+                </div>
+                <div class="flight-map" id="flightMap"></div>
+                <div class="leg-info">
+                    <div class="leg">
+                        <div class="leg-route">SFO &rarr; OPO</div>
+                        <div class="leg-duration">~11 hours</div>
+                    </div>
+                    <div class="leg-divider"></div>
+                    <div class="leg">
+                        <div class="leg-route">OPO &rarr; Venue</div>
+                        <div class="leg-duration">~1.5 hours</div>
+                    </div>
+                </div>
+                <div class="route-info">
+                    <h4>Recommended Route</h4>
+                    <p>Fly SFO to Porto (OPO) via Lisbon or direct seasonal flights. From Porto Airport, it's a scenic 1.5-hour drive through the Douro Valley wine country, passing terraced vineyards along the river.</p>
+                    <div class="route-total">
+                        <div class="time">~14h</div>
+                        <div class="label">Total door-to-door<br>travel time</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Driving Directions Map -->
+            <div class="map-card">
+                <div class="map-card-header">
+                    <h3>Airport to Venue</h3>
+                    <p>Porto Airport (OPO) &rarr; Six Senses Douro Valley</p>
+                </div>
+                <div class="map-frame">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d192698.0!2d-8.2!3d41.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd2465abc4e153c1%3A0xa648d95640b114!2sPorto%20Airport%2C%20Porto%2C%20Portugal!3m2!1d41.2481!2d-8.6813!4m5!1s0xd3b4e24c8e0ed31%3A0x6d4a1d5b8d2e5c4a!2sSix%20Senses%20Douro%20Valley%2C%20Lamego%2C%20Portugal!3m2!1d41.098!2d-7.811!5e0!3m2!1sen!2sus!4v1706000000000!5m2!1sen!2sus"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="route-info">
+                    <h4>The Drive</h4>
+                    <p>Head east from Porto on the A4 motorway, then follow the scenic N2 road along the Douro River. The drive through Portugal's oldest wine region is spectacular, with terraced vineyards cascading to the water.</p>
+                    <div class="route-total">
+                        <div class="time">1.5 hr</div>
+                        <div class="label">From Porto Airport<br>~130 km / 81 miles</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="budget-section" id="budget">
+        <div class="section-header">
+            <p class="subtitle">Plan Your Budget</p>
+            <h2>Interactive Cost Calculator</h2>
+        </div>
+
+        <div class="budget-calculator">
+            <div class="calculator-controls">
+                <div class="control-group">
+                    <label>Number of Guests</label>
+                    <div class="slider-container">
+                        <div class="slider-value" id="guestDisplay">40</div>
+                        <input type="range" id="guestSlider" min="20" max="80" value="40">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label>Number of Rooms (2-night minimum)</label>
+                    <div class="slider-container">
+                        <div class="slider-value" id="roomDisplay">10</div>
+                        <input type="range" id="roomSlider" min="10" max="30" value="10">
+                    </div>
+                </div>
+            </div>
+
+            <div class="budget-results">
+                <div class="breakdown">
+                    <table class="breakdown-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody id="breakdownBody">
+                            <!-- Filled by JS -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="total-display">
+                    <div class="label">Estimated Total</div>
+                    <div class="amount" id="totalAmount">$56,000</div>
+                    <div class="budget-status over" id="budgetStatus">Over budget by $26,000</div>
+
+                    <div class="remaining">
+                        <div class="label">Remaining for Photo/Video/Music/Planner</div>
+                        <div class="amount" id="remainingAmount">-$26,000</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="matrix-section">
+                <h3>Full Budget Matrix</h3>
+                <p style="text-align: center; color: #666; margin-bottom: 1.5rem; font-size: 0.9rem;">
+                    Total costs by guest count and room count (F&B + venue + accommodation)
+                </p>
+                <table class="budget-matrix">
+                    <thead>
+                        <tr>
+                            <th>Rooms</th>
+                            <th>30 Guests</th>
+                            <th>40 Guests</th>
+                            <th>50 Guests</th>
+                            <th>60 Guests</th>
+                        </tr>
+                    </thead>
+                    <tbody id="matrixBody">
+                        <!-- Filled by JS -->
+                    </tbody>
+                </table>
+                <p style="text-align: center; color: #666; margin-top: 1rem; font-size: 0.8rem;">
+                    * Includes &euro;3,800 venue fee + &euro;475/person F&B + rooms at &euro;1,500/night &times; 2 nights. USD at &euro;1 = $1.09. Wedding planner not included.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="considerations">
+        <div class="section-header">
+            <p class="subtitle">Considerations</p>
+            <h2>Pros & Cons</h2>
+        </div>
+
+        <div class="pros-cons">
+            <div class="pros">
+                <h3>Why Six Senses Douro Valley</h3>
+                <ul>
+                    <li>Six Senses luxury brand - world-class service and amenities</li>
+                    <li>UNESCO World Heritage Douro Valley setting</li>
+                    <li>Exceptional spa and wellness for wedding party</li>
+                    <li>All-inclusive F&B at &euro;475/person covers everything</li>
+                    <li>No full hotel buyout required for small weddings</li>
+                    <li>~60 rooms on-site for guest accommodation</li>
+                    <li>Portugal is an affordable, stunning destination</li>
+                    <li>World-class wine region for tastings and excursions</li>
+                    <li>Beautiful outdoor ceremony and reception spaces</li>
+                </ul>
+            </div>
+            <div class="cons">
+                <h3>Things to Consider</h3>
+                <ul>
+                    <li>High room minimum: 10 rooms at &euro;1,500/night = &euro;30,000 for 2 nights</li>
+                    <li>Events must end by midnight without full buyout</li>
+                    <li>Music limited to 80 dB without full buyout</li>
+                    <li>Some areas may not be available without buyout</li>
+                    <li>Wedding planner not included - quoted separately</li>
+                    <li>1.5-hour drive from Porto airport (no nearby airport)</li>
+                    <li>Significantly higher cost than other venues considered</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Explore?</h2>
+        <p>Schedule a site visit or request a detailed proposal to learn more about celebrating at Six Senses Douro Valley.</p>
+        <div class="cta-buttons">
+            <a href="mailto:vera.almeida@sixsenses.com?subject=Wedding%20Inquiry%20-%20Six%20Senses%20Douro%20Valley" class="btn btn-primary">Email Vera Almeida</a>
+            <a href="mailto:rita.oliveira@sixsenses.com?subject=Wedding%20Inquiry%20-%20Six%20Senses%20Douro%20Valley" class="btn btn-secondary">Email Rita Oliveira</a>
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+            Contacts: Vera Almeida (vera.almeida@sixsenses.com) | Marcelo Guedes (Sales Manager) | Rita Oliveira (+351 254 660 600)
+        </p>
+    </section>
+
+    <footer style="background: var(--cream); padding: 2rem; text-align: center; border-top: 1px solid var(--stone);">
+        <a href="index.html" style="color: var(--olive); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase;">&larr; Back to All Venues</a>
+        <p style="margin-top: 1rem; color: #999; font-size: 0.8rem;">Wedding Venue Review &bull; Six Senses Douro Valley &bull; Proposal received Feb 4, 2026</p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script>
+        // Navigation visibility
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > window.innerHeight * 0.8) {
+                nav.classList.add('visible');
+            } else {
+                nav.classList.remove('visible');
+            }
+        });
+
+        // Budget Calculator
+        const ROOM_RATE = 1500; // per night
+        const MIN_NIGHTS = 2;
+        const FB_PER_PERSON = 475;
+        const VENUE_FEE = 3800; // ceremony + cocktail/dinner
+        const EXCHANGE_RATE = 1.09;
+        const BUDGET = 30000;
+
+        const guestSlider = document.getElementById('guestSlider');
+        const guestDisplay = document.getElementById('guestDisplay');
+        const roomSlider = document.getElementById('roomSlider');
+        const roomDisplay = document.getElementById('roomDisplay');
+
+        function calculateBudget() {
+            const guests = parseInt(guestSlider.value);
+            const rooms = parseInt(roomSlider.value);
+
+            const roomTotal = rooms * ROOM_RATE * MIN_NIGHTS;
+            const fbTotal = guests * FB_PER_PERSON;
+            const totalEur = VENUE_FEE + fbTotal + roomTotal;
+            const totalUsd = Math.round(totalEur * EXCHANGE_RATE);
+
+            // Update displays
+            guestDisplay.textContent = guests;
+            roomDisplay.textContent = rooms;
+
+            // Build breakdown table
+            const breakdownBody = document.getElementById('breakdownBody');
+            let rows = `
+                <tr>
+                    <td>
+                        <div class="item-name">Accommodation</div>
+                        <div class="item-detail">${rooms} rooms &times; &euro;${ROOM_RATE.toLocaleString()}/night &times; ${MIN_NIGHTS} nights</div>
+                    </td>
+                    <td class="item-price">&euro;${roomTotal.toLocaleString()}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="item-name">Food & Beverage</div>
+                        <div class="item-detail">&euro;${FB_PER_PERSON} &times; ${guests} guests (all meals, drinks, service)</div>
+                    </td>
+                    <td class="item-price">&euro;${fbTotal.toLocaleString()}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="item-name">Venue Rental</div>
+                        <div class="item-detail">Olive Garden (&euro;1,300) + Organic Garden (&euro;2,500)</div>
+                    </td>
+                    <td class="item-price">&euro;${VENUE_FEE.toLocaleString()}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="item-name">Wedding Planner</div>
+                        <div class="item-detail">Not included &mdash; quoted separately</div>
+                    </td>
+                    <td class="item-price" style="color: #999;">TBD</td>
+                </tr>
+                <tr class="total-row">
+                    <td><strong>Total (EUR)</strong></td>
+                    <td class="item-price"><strong>&euro;${totalEur.toLocaleString()}</strong></td>
+                </tr>
+            `;
+
+            breakdownBody.innerHTML = rows;
+
+            // Update total display
+            const totalAmount = document.getElementById('totalAmount');
+            const budgetStatus = document.getElementById('budgetStatus');
+            const remainingAmount = document.getElementById('remainingAmount');
+
+            totalAmount.textContent = `$${totalUsd.toLocaleString()}`;
+
+            const remaining = BUDGET - totalUsd;
+            remainingAmount.textContent = remaining >= 0 ? `$${remaining.toLocaleString()}` : `-$${Math.abs(remaining).toLocaleString()}`;
+
+            if (remaining >= 10000) {
+                totalAmount.className = 'amount under-budget';
+                budgetStatus.className = 'budget-status good';
+                budgetStatus.textContent = `Under budget by $${remaining.toLocaleString()}`;
+            } else if (remaining >= 0) {
+                totalAmount.className = 'amount';
+                budgetStatus.className = 'budget-status warning';
+                budgetStatus.textContent = `$${remaining.toLocaleString()} remaining for vendors`;
+            } else {
+                totalAmount.className = 'amount over-budget';
+                budgetStatus.className = 'budget-status over';
+                budgetStatus.textContent = `Over budget by $${Math.abs(remaining).toLocaleString()}`;
+            }
+        }
+
+        function buildMatrix() {
+            const guestCounts = [30, 40, 50, 60];
+            const roomCounts = [10, 15, 20, 25];
+
+            const matrixBody = document.getElementById('matrixBody');
+            let html = '';
+
+            roomCounts.forEach(rooms => {
+                const roomCost = rooms * ROOM_RATE * MIN_NIGHTS;
+                html += `<tr><td>${rooms} Rooms<br><small style="color:#666">&euro;${roomCost.toLocaleString()} accom.</small></td>`;
+                guestCounts.forEach(guests => {
+                    const total = VENUE_FEE + (guests * FB_PER_PERSON) + roomCost;
+                    const usd = Math.round(total * EXCHANGE_RATE);
+                    const remaining = BUDGET - usd;
+
+                    let className = '';
+                    if (remaining >= 10000) className = 'good';
+                    else if (remaining >= 5000) className = 'warning';
+                    else if (remaining < 0) className = 'over';
+
+                    html += `<td class="${className}">$${usd.toLocaleString()}<br><small>${remaining >= 0 ? '+' : ''}$${remaining.toLocaleString()}</small></td>`;
+                });
+                html += '</tr>';
+            });
+
+            matrixBody.innerHTML = html;
+        }
+
+        // Event listeners
+        guestSlider.addEventListener('input', calculateBudget);
+        roomSlider.addEventListener('input', calculateBudget);
+
+        // Initialize
+        calculateBudget();
+        buildMatrix();
+
+        // D3 Flight Map
+        async function createFlightMap() {
+            const container = document.getElementById('flightMap');
+            const width = container.offsetWidth;
+            const height = container.offsetHeight;
+
+            // Clear any existing content
+            container.innerHTML = '';
+
+            const svg = d3.select('#flightMap')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height)
+                .style('cursor', 'grab');
+
+            // Gradient definitions
+            const defs = svg.append('defs');
+
+            // Route gradient
+            const routeGradient = defs.append('linearGradient')
+                .attr('id', 'routeGradient')
+                .attr('gradientUnits', 'userSpaceOnUse');
+
+            routeGradient.append('stop')
+                .attr('offset', '0%')
+                .attr('stop-color', '#b8956e');
+
+            routeGradient.append('stop')
+                .attr('offset', '50%')
+                .attr('stop-color', '#d4af7a');
+
+            routeGradient.append('stop')
+                .attr('offset', '100%')
+                .attr('stop-color', '#c4724e');
+
+            // Glow filter
+            const glow = defs.append('filter')
+                .attr('id', 'glow')
+                .attr('x', '-50%')
+                .attr('y', '-50%')
+                .attr('width', '200%')
+                .attr('height', '200%');
+
+            glow.append('feGaussianBlur')
+                .attr('stdDeviation', '3')
+                .attr('result', 'coloredBlur');
+
+            const glowMerge = glow.append('feMerge');
+            glowMerge.append('feMergeNode').attr('in', 'coloredBlur');
+            glowMerge.append('feMergeNode').attr('in', 'SourceGraphic');
+
+            // Create a group for all map content (will be transformed by zoom)
+            const mapGroup = svg.append('g').attr('class', 'map-group');
+
+            // Projection - centered on the Atlantic
+            const projection = d3.geoNaturalEarth1()
+                .center([-40, 38])
+                .scale(width * 0.32)
+                .translate([width / 2, height / 2]);
+
+            const path = d3.geoPath().projection(projection);
+
+            // Zoom behavior
+            const zoom = d3.zoom()
+                .scaleExtent([0.5, 4])
+                .on('zoom', (event) => {
+                    mapGroup.attr('transform', event.transform);
+                })
+                .on('start', () => svg.style('cursor', 'grabbing'))
+                .on('end', () => svg.style('cursor', 'grab'));
+
+            svg.call(zoom);
+
+            // Double-click to reset
+            svg.on('dblclick.zoom', () => {
+                svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
+            });
+
+            // Load world map
+            const world = await d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json');
+            const countries = topojson.feature(world, world.objects.countries);
+
+            // Add graticule
+            const graticule = d3.geoGraticule()
+                .step([20, 20]);
+
+            mapGroup.append('path')
+                .datum(graticule)
+                .attr('class', 'graticule')
+                .attr('d', path);
+
+            // Draw countries
+            mapGroup.selectAll('.land')
+                .data(countries.features)
+                .enter()
+                .append('path')
+                .attr('class', 'land')
+                .attr('d', path);
+
+            // City coordinates
+            const cities = {
+                sfo: { coords: [-122.375, 37.619], code: 'SFO', name: 'San Francisco' },
+                porto: { coords: [-8.681, 41.248], code: 'OPO', name: 'Porto' },
+                venue: { coords: [-7.811, 41.098], name: 'Six Senses Douro' }
+            };
+
+            // Create great circle paths
+            function createArc(start, end) {
+                const interpolate = d3.geoInterpolate(start, end);
+                const numPoints = 100;
+                const points = [];
+                for (let i = 0; i <= numPoints; i++) {
+                    points.push(interpolate(i / numPoints));
+                }
+                return points;
+            }
+
+            const route1Points = createArc(cities.sfo.coords, cities.porto.coords);
+            const route2Points = createArc(cities.porto.coords, cities.venue.coords);
+
+            const lineGenerator = d3.line()
+                .x(d => projection(d)[0])
+                .y(d => projection(d)[1])
+                .curve(d3.curveCatmullRom);
+
+            // Update gradient coordinates
+            const sfoPos = projection(cities.sfo.coords);
+            const portoPos = projection(cities.porto.coords);
+            routeGradient
+                .attr('x1', sfoPos[0])
+                .attr('y1', sfoPos[1])
+                .attr('x2', portoPos[0])
+                .attr('y2', portoPos[1]);
+
+            // Draw route glow
+            mapGroup.append('path')
+                .datum(route1Points)
+                .attr('class', 'flight-route-glow')
+                .attr('d', lineGenerator);
+
+            // Draw main route SFO -> Porto
+            const route1 = mapGroup.append('path')
+                .datum(route1Points)
+                .attr('class', 'flight-route')
+                .attr('d', lineGenerator);
+
+            // Draw route Porto -> Venue
+            mapGroup.append('path')
+                .datum(route2Points)
+                .attr('class', 'flight-route')
+                .attr('d', lineGenerator)
+                .style('stroke-width', '2');
+
+            // Animated dashed overlay
+            const totalLength1 = route1.node().getTotalLength();
+            mapGroup.append('path')
+                .datum(route1Points)
+                .attr('class', 'route-dash')
+                .attr('d', lineGenerator)
+                .attr('stroke-dasharray', `${totalLength1} ${totalLength1}`)
+                .attr('stroke-dashoffset', totalLength1)
+                .transition()
+                .duration(3000)
+                .ease(d3.easeLinear)
+                .attr('stroke-dashoffset', 0);
+
+            // City markers
+            Object.entries(cities).forEach(([key, city]) => {
+                const pos = projection(city.coords);
+                const g = mapGroup.append('g')
+                    .attr('class', 'city-marker')
+                    .attr('transform', `translate(${pos[0]}, ${pos[1]})`);
+
+                // Pulse animation for origin and destination
+                if (key === 'sfo' || key === 'venue') {
+                    g.append('circle')
+                        .attr('class', 'city-marker-pulse')
+                        .attr('r', 8);
+                }
+
+                // Outer ring
+                g.append('circle')
+                    .attr('class', 'city-marker-ring')
+                    .attr('r', key === 'venue' ? 10 : 8);
+
+                // Inner dot
+                g.append('circle')
+                    .attr('r', key === 'venue' ? 5 : 4)
+                    .attr('fill', key === 'venue' ? '#c4724e' : '#b8956e');
+
+                // Star for venue
+                if (key === 'venue') {
+                    const starPath = 'M0,-7 L1.5,-2 L7,-2 L2.5,1.5 L4,7 L0,3.5 L-4,7 L-2.5,1.5 L-7,-2 L-1.5,-2 Z';
+                    g.append('path')
+                        .attr('class', 'venue-star')
+                        .attr('d', starPath)
+                        .attr('transform', 'translate(0, -18) scale(0.7)');
+                }
+
+                // Labels
+                const labelOffset = key === 'sfo' ? [-10, -18] :
+                                   key === 'porto' ? [12, -5] :
+                                   [12, -5];
+
+                const anchor = key === 'sfo' ? 'end' : 'start';
+
+                if (city.code) {
+                    g.append('text')
+                        .attr('class', 'city-label')
+                        .attr('x', labelOffset[0])
+                        .attr('y', labelOffset[1])
+                        .attr('text-anchor', anchor)
+                        .text(city.code);
+
+                    g.append('text')
+                        .attr('class', 'city-sublabel')
+                        .attr('x', labelOffset[0])
+                        .attr('y', labelOffset[1] + 12)
+                        .attr('text-anchor', anchor)
+                        .text(city.name);
+                } else {
+                    g.append('text')
+                        .attr('class', 'city-label')
+                        .attr('x', labelOffset[0])
+                        .attr('y', labelOffset[1])
+                        .attr('text-anchor', anchor)
+                        .style('font-size', '10px')
+                        .text(city.name);
+                }
+            });
+
+            // Animated airplane
+            const planeSymbol = 'M-1.5,0 L-8,-2.5 L-8,-1 L-3,0 L-8,1 L-8,2.5 L-1.5,0 M0,-0.8 L6,0 L0,0.8 Z';
+
+            const plane = mapGroup.append('g')
+                .attr('class', 'plane-group');
+
+            plane.append('path')
+                .attr('class', 'plane-icon')
+                .attr('d', planeSymbol)
+                .attr('transform', 'scale(2)')
+                .attr('filter', 'url(#glow)');
+
+            // Animate plane along route
+            function animatePlane() {
+                const allPoints = [...route1Points, ...route2Points.slice(1)];
+                let i = 0;
+
+                function updatePlane() {
+                    if (i >= allPoints.length - 1) {
+                        i = 0;
+                        setTimeout(updatePlane, 2000);
+                        return;
+                    }
+
+                    const curr = projection(allPoints[i]);
+                    const next = projection(allPoints[Math.min(i + 1, allPoints.length - 1)]);
+                    const angle = Math.atan2(next[1] - curr[1], next[0] - curr[0]) * 180 / Math.PI;
+
+                    plane.attr('transform', `translate(${curr[0]}, ${curr[1]}) rotate(${angle})`);
+
+                    i++;
+                    setTimeout(updatePlane, 50);
+                }
+
+                updatePlane();
+            }
+
+            animatePlane();
+
+            // Ocean label
+            mapGroup.append('text')
+                .attr('x', width * 0.35)
+                .attr('y', height * 0.65)
+                .attr('fill', 'rgba(255,255,255,0.15)')
+                .attr('font-size', '14px')
+                .attr('font-style', 'italic')
+                .attr('font-family', 'Cormorant Garamond, serif')
+                .text('Atlantic Ocean');
+
+            // Add zoom hint
+            svg.append('text')
+                .attr('x', 10)
+                .attr('y', height - 10)
+                .attr('fill', 'rgba(255,255,255,0.4)')
+                .attr('font-size', '10px')
+                .attr('font-family', 'Montserrat, sans-serif')
+                .text('Drag to pan \u2022 Scroll to zoom \u2022 Double-click to reset');
+        }
+
+        // Initialize flight map
+        createFlightMap();
+
+        // Redraw on resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(createFlightMap, 250);
+        });
+    </script>
+</body>
+</html>
